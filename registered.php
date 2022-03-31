@@ -187,7 +187,7 @@ if(isset($_POST['adduser']))
 				<h6>Informasi Login</h6>
 					
 					<input type="text" name="email" placeholder="Email" required="@">
-					<input type="password" minlength="8" name="pass" placeholder="Password" required>
+					<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" name="pass" placeholder="Password" required>
 					<input type="submit" name="adduser" value="Daftar">
 				</form>
 			</div>

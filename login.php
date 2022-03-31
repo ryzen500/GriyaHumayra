@@ -183,7 +183,7 @@ $timenow = date("j-F-Y-h:i:s A");
 			<div class="login-form-grids animated wow slideInUp" data-wow-delay=".5s">
 				<form name="formInput" method="post" onsubmit="validasiEmail();">
 					<input type="text" name="email" placeholder="Email" required>
-					<input type="password" minlength="8" name="pass" placeholder="Password" required>
+					<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" name="pass" placeholder="Password" required>
 					<input type="submit" name="login" value="Masuk">
 				</form>
 			</div>
